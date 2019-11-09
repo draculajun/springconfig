@@ -1,0 +1,17 @@
+server:
+  port: 4321
+spring:
+  application:
+    name: activiti
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&useSSL=true&serverTimezone=GMT%2b8
+    username: root
+    password: wucena008
+activiti:
+    database-schema-update: true
+    check-process-definitions: false
+    process-definition-location-prefix: classpath:/processes/
+
+mybatis:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
