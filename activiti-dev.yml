@@ -13,3 +13,8 @@ spring:
 
 mybatis:
   mapper-locations: classpath*:/mapper/**Mapper.xml
+  
+activiti:
+  database-schema-update: true
+  check-process-definitions: false
+  process-definition-location-prefix: classpath:/processes/
