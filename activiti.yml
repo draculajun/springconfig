@@ -18,3 +18,8 @@ activiti:
 
 mybatis:
   mapper-locations: classpath*:/mapper/**Mapper.xml
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka/
