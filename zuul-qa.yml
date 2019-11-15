@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=UTF-8&serverTimezone=GMT%2b8
+    username: root
+    password: wucena008
+
+mybatis:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  
+
+# 必须加此配置，否则zuul的http://localhost:5555/actuator/routes无法访问
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#在zuul的url增加api的prefix，如http://192.168.31.139:5555/api/demo/demo
+zuul:
+  prefix: /api-qa
