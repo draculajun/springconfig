@@ -20,3 +20,7 @@ activiti:
   database-schema-update: true
   check-process-definitions: false
   process-definition-location-prefix: classpath:/processes/
+  
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
