@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: activiti
+    name: eurekaClient1
     
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
