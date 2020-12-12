@@ -8,6 +8,11 @@ spring:
     username: root
     password: wucena008
 
+mybatis:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 ribbon:
   ReadTimeout: 30000
   ConnectTimeout: 30000
